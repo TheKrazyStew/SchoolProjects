@@ -1,0 +1,41 @@
+[s776998@cisone cs2-lab4-s776998]$ java PostfixTester
+Enter a valid in-fix expression one token at a time with a space between each token (e.g. 5 4 + 3 2 1 - + *)
+Each token must be an integer or an operator (+,-,*,)
+1 + 2 + 3
+1 2 3 + +
+
+That expression equals 6
+Evaluate another expression [Y/N]? y
+
+Enter a valid in-fix expression one token at a time with a space between each token (e.g. 5 4 + 3 2 1 - + *)
+Each token must be an integer or an operator (+,-,*,)
+1 + ( 2 * 3 ) + 4
+1 2 3 * 4 + +
+
+That expression equals 11
+Evaluate another expression [Y/N]? y
+
+Enter a valid in-fix expression one token at a time with a space between each token (e.g. 5 4 + 3 2 1 - + *)
+Each token must be an integer or an operator (+,-,*,)
+1 + 2 * 3
+1 2 3 * +
+
+That expression equals 7
+Evaluate another expression [Y/N]? y
+
+Enter a valid in-fix expression one token at a time with a space between each to                                     ken (e.g. 5 4 + 3 2 1 - + *)
+Each token must be an integer or an operator (+,-,*,)
+1 + ( 2 - 3 )
+1 2 3 - +
+
+That expression equals 0
+Evaluate another expression [Y/N]? y
+
+Enter a valid in-fix expression one token at a time with a space between each to                                     ken (e.g. 5 4 + 3 2 1 - + *)
+Each token must be an integer or an operator (+,-,*,)
+( ( 1 + 2 ) * 3 )
+1 2 + 3 *
+
+That expression equals 9
+Evaluate another expression [Y/N]? n
+

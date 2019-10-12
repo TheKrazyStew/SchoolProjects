@@ -1,0 +1,147 @@
+
+[s776998@cisone cs2-lab6-s776998]$ java DoubleListTester
+
+==test addToFront()==
+test case: appending
+expect:  ABC
+got:     ABC
+test case: size increment
+expect:  3
+got:     3
+test case: proper pointer handling
+expect:  A
+got:     A
+expect:  C
+got:     C
+
+==test addToRear()==
+test case: appending
+expect:  ABC
+got:     ABC
+test case: size increment
+expect:  3
+got:     3
+test case: proper pointer handling
+expect:  A
+got:     A
+expect:  C
+got:     C
+
+==test addAfter()==
+test case: add to middle
+expect:  ABC
+got:     ABC
+expect:  3
+got:     3
+expect:  A
+got:     A
+expect:  C
+got:     C
+test case: add to empty list
+expect:  NoSuchElementException
+got:     java.util.NoSuchElementException
+test case: add to nowhere
+expect:  NoSuchElementException
+got:     java.util.NoSuchElementException
+expect:  AB
+got:     AB
+test case: add to rear
+expect:  ABC
+got:     ABC
+expect:  3
+got:     3
+expect:  A
+got:     A
+expect:  C
+got:     C
+
+==test removeFirst()==
+test case: remove from empty list
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+test case: remove the only node
+expect:  A
+got:     A
+expect:  0
+got:     0
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+test case: remove the first node
+expect:  A
+got:     A
+expect:  1
+got:     1
+expect:  B
+got:     B
+expect:  B
+got:     B
+
+==test removeLast()==
+test case: remove from empty list
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+test case: remove the only node
+expect:  A
+got:     A
+expect:  0
+got:     0
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+test case: remove the last node
+expect:  B
+got:     B
+expect:  1
+got:     1
+expect:  A
+got:     A
+expect:  A
+got:     A
+
+==test remove()==
+test case: remove from empty list
+expect:  NoSuchElementException
+got:     java.util.NoSuchElementException
+test case: remove the only node
+expect:  A
+got:     A
+expect:  0
+got:     0
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+expect:  EmptyCollectionException
+got:     EmptyCollectionException: The list is empty.
+test case: element not found
+expect:  NoSuchElementException
+got:     java.util.NoSuchElementException
+test case: remove the first node
+expect:  A
+got:     A
+expect:  1
+got:     1
+expect:  B
+got:     B
+expect:  B
+got:     B
+test case: remove the last node
+expect:  B
+got:     B
+expect:  1
+got:     1
+expect:  A
+got:     A
+expect:  A
+got:     A
+test case: remove from the middle
+expect:  B
+got:     B
+expect:  2
+got:     2
+expect:  A
+got:     A
+expect:  C
+got:     C
+
